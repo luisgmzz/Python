@@ -1,5 +1,6 @@
 from grid import Grid
 from vector import *
+import time
 
 try:
     size = int(input("Enter grid's dimensions:\n"))
@@ -57,3 +58,4 @@ for i in range(2):
 vector = Vector(origin, destiny)
 
 print(vector.module)
+time.sleep(1)

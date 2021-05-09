@@ -18,3 +18,15 @@ class Line:
 
     def function(self, x: int):
         return int(self.slope * x + self.coord_at_origin)
+
+class Parable:
+    def __init__(self, a, b, c):
+       self.a = a
+       self.b = b
+       self.c = c
+
+       self.formula = f"{self.a}x² + {self.b}x + {c}"
+
+
+    def function(self, x):
+        return self.a*x**2 + self.b*x + self.c
