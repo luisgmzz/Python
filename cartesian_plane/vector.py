@@ -28,13 +28,9 @@ class Vector:
 
 
 if __name__ == "__main__":
-    p = Point(2, 3)
-    q = Point(3, 2)
-
-    r = Point(4, 3)
-    s = Point(3, 5)
+    p = Point(-4, 0)
+    q = Point(4, 0)
 
     v = Vector(p, q)
-    u = Vector(r, s)
-    print(v*u)
+    print(v.module)
     
