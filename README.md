@@ -5,7 +5,7 @@ Those are all the Python projects I have worked on since I started coding:
 - Cartesian Plane
 - Equation Solver
 - Guess the number
-- Ip
+- IP getter
 - Math scripts
 - Random Password Generator 
 - Keyboard bot

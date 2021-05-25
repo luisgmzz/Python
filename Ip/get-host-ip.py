@@ -1,5 +1,5 @@
 import socket as sc
 
-host = "educacionadistancia.juntadeandalucia.es"
+HOST = "github.com"
 
-print(f"IP of {host} is {sc.gethostbyname(host)}")
+print(f"IP of {HOST} is {sc.gethostbyname(HOST)}")
