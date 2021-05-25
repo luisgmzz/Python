@@ -3,6 +3,7 @@ from vector import Point
 from colorama import init, Fore
 from lines_and_parables import *
 
+
 # Initializing colorama with autoreset
 init(autoreset=True)
 
