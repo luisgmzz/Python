@@ -30,9 +30,7 @@ for i in range(tries):
 
         for num in birthdays:
             if num == last_node:
-                if num == previous_last_node:
-                    pass
-                else:
+                if num != previous_last_node:
                     coincidences += 1
                     pli = last_node
             else:
