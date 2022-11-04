@@ -1,0 +1,4 @@
+7890234,gomez,luis,h,futbol,15
+7890234,gomez,luis,h,futbol,18
+7890234,gomez,luis,h,futbol,19
+7890234,fernandez,luis,h,basquetbol,15

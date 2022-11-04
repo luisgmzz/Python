@@ -40,8 +40,8 @@ def classify(equation: list):
 
 
 def simplify(equation: dict):
-    simplified = [equation["x0"] - equation["x1"],
-                  equation["n0"] - equation["n1"]]
+    simplified = (equation["x0"] - equation["x1"],
+                  equation["n0"] - equation["n1"])
 
     return simplified
 
@@ -50,7 +50,9 @@ def get_equation(equation: str):
     return simplify(classify(show_indices(equation)))
 
 
-def calculate(equation: list):
-    a = list[0]
-    b = list[1]
-    return -b/a
+def calculate(equation: tuple):
+    return -list[1]/list[0]
+
+º
+print(calculate((0.7, 1.275)))
+#print(calculate(get_equation("1.275 + 0.7x")))

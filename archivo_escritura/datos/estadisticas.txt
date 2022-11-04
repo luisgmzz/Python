@@ -1,0 +1,3 @@
+futbol-> Promedio Edad: 17.333333333333332 | Hombres-Mujeres: 3-0
+basquetbol-> Promedio Edad: 15 | Hombres-Mujeres: 1-0
+tenis-> Promedio Edad: 0 | Hombres-Mujeres: 0-0

@@ -1,12 +1,12 @@
 class Matrix:
     def __init__(self, data):
-        self.data = data
+        self.__data = data
         self.i = len(data)
-        self.j = len(data[0])
+        self.j = len(data[0]) if data else None
 
     def __repr__(self):
         representation = ""
-        for i in self.data:
+        for i in self.__data:
             representation += "[ "
             for j in i:
                 representation += str(j) + " "
@@ -16,10 +16,10 @@ class Matrix:
     def __add__(self, other):
         new_matrix = []
 
-        for i in range(len(self.data)):
+        for i in range(len(self.__data)):
             new_matrix.append([])
-            for j in range(len(self.data[i])):
-                new_matrix[i].append(self.data[i][j] + other.data[i][j])
+            for j in range(len(self.__data[i])):
+                new_matrix[i].append(self.__data[i][j] + other.__data[i][j])
 
         return Matrix(new_matrix)
 
@@ -30,8 +30,17 @@ class Matrix:
         new_matrix = []
 
         if (isinstance(other, int)):
-            for i in self.data:
+            for i in self.__data:
                 new_matrix.append(list(map(lambda x: other*x, i)))
+        elif (isinstance(other, Matrix)):
+            for i in range(len(self.__data)):
+                sums = []
+                self.__data[i]
+                for j in range(len(self.__data[i])):
+                    sums.append(self.__data[i][j] * other.__data[j][i])
+                print(sums)
+                
+
 
         return Matrix(new_matrix)
 
@@ -47,4 +56,4 @@ if __name__ == "__main__":
         [2, 3]
     ])
 
-    print(m)
+    print(m*n)

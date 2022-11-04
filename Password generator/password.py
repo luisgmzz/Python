@@ -1,4 +1,4 @@
-import random as rd
+from random import randrange, randint
 
 
 abc = {1: "a", 2: "b", 3: "c", 4: "d", 5: "e", 6: "f", 7: "g", 8: "h", 9: "i", 10: "j", 11: "k", 12: "l", 13: "m",
@@ -7,11 +7,10 @@ abc = {1: "a", 2: "b", 3: "c", 4: "d", 5: "e", 6: "f", 7: "g", 8: "h", 9: "i", 1
 
 def create_password(n):
     password = ""
-    f = ""
     while len(password) < n:
         for word in abc:
-            rb = rd.randrange(3)
-            rn = rd.randint(1, 37)
+            rb = randrange(3)
+            rn = randint(1, 37)
             if len(password) == n:
                 break
             elif rn == word:
