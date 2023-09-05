@@ -29,4 +29,4 @@ if __name__ == "__main__":
         string += "\n]"
         print(string)
     
-    print(mcd(12, 0))
+    print(mcd(11, 3))

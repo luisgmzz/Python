@@ -8,7 +8,7 @@ init(True)
 
 grid = Grid(50)
 parable = Parable(1, 10, 1)
-line = Line(Vector))
+line = Line(Vector)
 
 for i in range(grid.size):
     a = parable.function(i)
